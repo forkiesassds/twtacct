@@ -1,7 +1,7 @@
 # How to contribute
-First fork this repo, then add whatever you want and then make a PR.
+First fork this repository, then add whatever you wish and then make a pull request. It will be accepted as soon as possible.
 
-# Rules
-1. Content must be SFW, we don't want your porn
-2. No obfuscated JS or anti-adblocks.
-3. Your code must run on a potato.
+## Rules
+1. Content must be SFW and legal, we don't want your porn.
+2. No obfuscated JavaScript, ads or any malicious content.
+3. Your code must run on a potato, no bloated JavaScript librairies. Optimally it should be clean W3C spec.

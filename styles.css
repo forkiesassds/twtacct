@@ -54,3 +54,9 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #101010;
+		color: #fff;
+	}
+}

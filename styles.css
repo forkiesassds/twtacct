@@ -69,7 +69,7 @@ hr {
 }
 
 /*Darkmode*/
-@media (prefers-color-scheme: dark) { 
+@media (prefers-color-scheme: dark) {
 	body {
 		background-color: #111;
 		color: #efefef;

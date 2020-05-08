@@ -1,6 +1,4 @@
 @import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
-@import url("blink/blink.css"); /*Imports blinking css*/
-
 html {
 	scroll-behavior: smooth;
 	cursor: default;
@@ -67,7 +65,7 @@ hr {
 q{font-style: italic;}
 
 /*Darkmode*/
-@media (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
 	body {
 		background-color: #111;
 		color: #efefef;
@@ -91,7 +89,7 @@ q{font-style: italic;}
 	}
 }
 /*Reduced Motion*/
-@media only (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
 	a,a:link,a:visited {
 		transition: none;
 	}

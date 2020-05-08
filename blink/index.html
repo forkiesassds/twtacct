@@ -11,6 +11,7 @@
 		<meta name="title" content="TWTACCT - <blink>">
 		<meta name="description" content="The Website That Anyone Can Contribute To. Click here to learn about the horrible &lt;blink&gt; element!">
 		<link rel="stylesheet" href="../styles.css">
+		<link rel="stylesheet" href="blink.css">
 		<script>console.log("%cThis site needs your help!\nContribute at https://github.com/forkiesassds/twtacct","font-size:1.5em;font-family:monospace");</script>
 		<title>TWTACCT - &lt;blink&gt;</title>
 	</head>
@@ -69,13 +70,14 @@
 				@keyframes blink {<br>
 					75% {opacity: 0}<br>
 				}<br>
-				@media only (prefers-reduced-motion: reduce) { /*For accessibility, disables blinking for users with motion sickness*/<br>
-					blink, .blink {<br>
-						-webkit-animation: none;<br>
-						-moz-animation: none;<br>
-						-o-animation: none;<br>
-						animation: none;<br>
-						}<br>
+				/*For accessibility, disables blinking for users with motion sickness*/
+				@media screen only (prefers-reduced-motion: reduce) {
+					blink, .blink {
+						-webkit-animation: none;
+						-moz-animation: none;
+						-o-animation: none;
+						animation: none;
+					}
 				}
 			</code>
 			<p>This will allow us to <span class="blink">blink</span> anything we give the <code>&lt;blink&gt;</code> element to or anything with the <code>.blink</code> class.</p>

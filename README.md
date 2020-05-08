@@ -3,4 +3,4 @@
 
 Welcome to *TWTACCT*, the website anyone can contribute to! See [Contributing](CONTRIBUTING.md) for details on how to add your content.
 
-![TWTACCT](android-chrome-192x192.png)
+![TWTACCT](media/android-chrome-192x192.png)

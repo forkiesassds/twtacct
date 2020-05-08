@@ -1,3 +1,6 @@
+@import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
+@import url("blink/blink.css"); /*Imports blinking css*/
+
 html {
 	scroll-behavior: smooth;
 	cursor: default;
@@ -9,8 +12,6 @@ html {
 	background-color: #003399;
 }
 
-@import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
-
 .center {
 	margin: auto;
 	width: 98%;
@@ -19,7 +20,7 @@ html {
 }
 body {
 	margin: 1%;
-	font-family: Lato, sans-serif;
+	font-family: LatoLatinWeb, sans-serif;
 	color: #000;
 	background: #f7f7f7;
 }

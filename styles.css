@@ -64,10 +64,6 @@ hr {
 	border-radius: 4px;
 }
 
-#bruh { /*GIF on free stuff page*/
-	cursor: wait;
-}
-
 /*Darkmode*/
 @media (prefers-color-scheme: dark) {
 	body {

@@ -25,7 +25,7 @@ blink, .blink {
 	75% {opacity: 0}
 }
 /*For accessibility, disables blinking for users with motion sickness*/
-@media screen only (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
 	blink, .blink {
 		-webkit-animation: none;
 		-moz-animation: none;

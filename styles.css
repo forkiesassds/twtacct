@@ -1,3 +1,4 @@
+@import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
 html {
 	scroll-behavior: smooth;
 	cursor: default;
@@ -8,8 +9,6 @@ html {
 	color: #eee;
 	background-color: #003399;
 }
-
-@import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
 
 .center {
 	margin: auto;
@@ -66,7 +65,7 @@ hr {
 q{font-style: italic;}
 
 /*Darkmode*/
-@media screen only (prefers-color-scheme: dark) {
+@media only screen and (prefers-color-scheme: dark) {
 	body {
 		background-color: #111;
 		color: #efefef;
@@ -90,7 +89,7 @@ q{font-style: italic;}
 	}
 }
 /*Reduced Motion*/
-@media screen only (prefers-reduced-motion: reduce) {
+@media only screen and (prefers-reduced-motion: reduce) {
 	a,a:link,a:visited {
 		transition: none;
 	}

@@ -13,12 +13,12 @@ html {
 
 .center {
 	margin: auto;
-	width: 95%;
+	width: 98%;
 	text-align: center;
-	padding: 10px;
+	padding: 5px;
 }
 body {
-	margin: 3%;
+	margin: 1%;
 	font-family: Lato, sans-serif;
 	color: #000;
 	background: #f7f7f7;
@@ -58,7 +58,7 @@ a:active {
 img {
 	max-width: 100%;
 	height: auto;
-	padding: 5px;
+	padding: 3px;
 }
 hr {
 	border: 2px solid #000;border-radius: 4px;

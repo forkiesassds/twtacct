@@ -18,9 +18,10 @@ html {
 	padding: 10px;
 }
 body {
-	font-family: "Lato", sans-serif;
+	margin: 3%;
+	font-family: Lato, sans-serif;
 	color: #000;
-	background: #efefef; /*Night time friendly gray/white hybrid!*/
+	background: #f7f7f7;
 }
 
 h1 {
@@ -30,39 +31,39 @@ h2 {
 	font-size: 2.3em;
 }
 h3 {
-	font-size: 1.8em;
-	font-style: normal;
+	font-size: 1.8em;font-style: normal;
 }
-p {
+p,code,ol {
 	font-size: 1.2em;
 }
 a,a:link,a:visited {
 	transition: color .25s, border-bottom-color .25s;
-	color: #33adff;
+	color: #1aa3ff;
 	text-decoration: none;
 	border-bottom: solid .1em transparent;
 	font-style: italic;
 }
 a:hover {
 	transition: color .25s, border-bottom-color .25s;
-	color: #008ae6;
+	color: #007acc;
 	text-decoration: none;
-	border-bottom-color: #008ae6;
+	border-bottom-color: #007acc;
 }
 a:active {
 	transition: color .25s, border-bottom-color .25s;
-	color: #009;
+	color: #1a53ff;
 	text-decoration: none;
-	border-bottom-color: #009;
+	border-bottom-color: #1a53ff;
 }
 img {
 	max-width: 100%;
 	height: auto;
+	padding: 5px;
 }
 hr {
-	border: 2px solid #000;
-	border-radius: 4px;
+	border: 2px solid #000;border-radius: 4px;
 }
+q{font-style: italic;}
 
 /*Darkmode*/
 @media (prefers-color-scheme: dark) {
@@ -71,11 +72,32 @@ hr {
 		color: #efefef;
 	}
 	::selection {
-		background-color: #0cf;
+		background-color: #09f;
 		color: #333;
 	}
 	hr {
-	border: 2px solid #efefef;
-	border-radius: 4px;
+		border: 2px solid #efefef;
+		border-radius: 4px;
+	}
+	a,a:link,a:visited {
+		color: #4db8ff;
+	}
+	a:hover {
+		color: #09f;
+	}
+	a:active {
+		color: #36f;
+	}
+}
+/*Reduced Motion*/
+@media only (prefers-reduced-motion: reduce) {
+	a,a:link,a:visited {
+		transition: none;
+	}
+	a:hover {
+		transition: none;
+	}
+	a:active {
+		transition: none;
 	}
 }

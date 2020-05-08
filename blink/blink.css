@@ -1,0 +1,35 @@
+/*This sheet gives us a polyfill for <blink>, which never part of HTML spec and last seen in browsers around 2013 with Firefox 22.
+It uses CSS3 animation, working up to Internet Explorer 10.*/
+/*To use this, give text the <blink> tag or add the .blink class.*/
+/*For acessibility reasons, it is NOT reccomended that you use this. I made it for fun.*/
+blink, .blink {
+	-webkit-animation: blink 1s step-end infinite;
+	-moz-animation: blink 1s step-end infinite;
+	-o-animation: blink 1s step-end infinite;
+	animation: blink 1s step-end infinite;
+}
+
+@-webkit-keyframes blink {
+	75% {opacity: 0}
+}
+
+@-moz-keyframes blink {
+	75% {opacity: 0}
+}
+
+@-o-keyframes blink{
+	75% {opacity: 0}
+}
+
+@keyframes blink {
+	75% {opacity: 0}
+}
+
+@media only (prefers-reduced-motion: reduce) { /*For accessibility, disables blinking for users with motion sickness*/
+	blink, .blink {
+		-webkit-animation: none;
+		-moz-animation: none;
+		-o-animation: none;
+		animation: none;
+	}
+}

@@ -1,0 +1,70 @@
+.ct {
+	background-color: #fff;
+}
+
+.cop {
+	text-align: right;
+}
+
+.ftr {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #EEE;
+	border-top: 1px solid #BBB;
+	color: black;
+	text-align: center;
+}
+
+.ftr p {
+	margin: 2px;
+	padding: 2px;
+}
+
+body {
+	font-family: Verdana,Geneva,sans-serif;
+	font-size: 12px;
+	height: 100vh;
+	margin: 25px;
+	-webkit-font-smoothing: antialiased;
+	
+	/* Background gradient */
+	background: rgb(147,165,207);
+	background: -moz-linear-gradient(180deg, rgba(147,165,207,1) 0%, rgba(228,239,233,1) 100%);
+	background: -webkit-linear-gradient(180deg, rgba(147,165,207,1) 0%, rgba(228,239,233,1) 100%);
+	background: linear-gradient(180deg, rgba(147,165,207,1) 0%, rgba(228,239,233,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#93a5cf",endColorstr="#e4efe9",GradientType=1);
+	
+	/* Hide scrollbars */
+	overflow: hidden;
+	
+	/* Disable text selection */
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+h3 {
+	font-size: 10px;
+}
+
+h1, h2, h3 {
+	color: white;
+	text-shadow: #000 0 0 4px;
+}
+
+span.mg {
+	color: #f6e486;
+}

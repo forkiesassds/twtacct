@@ -1,10 +1,27 @@
 @import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
 html {
+	/*Firefox CSS scrollbar*/
 	scroll-behavior: smooth;
 	cursor: default;
-	scrollbar-width: thin;scrollbar-color:#ddd #222; /*Firefox CSS scrollbar*/
+	scrollbar-width: thin;
+	scrollbar-color:#ddd #222; 
 }
-::-webkit-scrollbar{width:10px;height:10px}::-webkit-scrollbar-track{background:#222}::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px}::-webkit-scrollbar-button{width:0;height:0} /*Compressed line of WebKit Scrollbar so WebKit/Chromium browsers have the same scrollbar*/
+/*Compressed line of WebKit Scrollbar so WebKit/Chromium browsers have the same scrollbar*/
+::-webkit-scrollbar{
+	width:10px;
+	height:10px;
+}
+::-webkit-scrollbar-track{
+	background:#222;
+}
+::-webkit-scrollbar-thumb{
+	background:#ddd;
+	border-radius:4px;
+}
+::-webkit-scrollbar-button{
+	width:0;
+	height:0;
+}
 ::selection {
 	color: #eee;
 	background-color: #003399;
@@ -30,7 +47,8 @@ h2 {
 	font-size: 2.3em;
 }
 h3 {
-	font-size: 1.8em;font-style: normal;
+	font-size: 1.8em;
+	font-style: normal;
 }
 p,code,ol {
 	font-size: 1.2em;
@@ -61,9 +79,12 @@ img {
 	border: none; /* Removes the border on IE 10 and older */
 }
 hr {
-	border: 2px solid #000;border-radius: 4px;
+	border: 2px solid #000;
+	border-radius: 4px;
 }
-q{font-style: italic;}
+q {
+	font-style: italic;
+}
 
 /*Darkmode*/
 @media only screen and (prefers-color-scheme: dark) {

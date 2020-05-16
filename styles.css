@@ -58,6 +58,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	padding: 3px;
+	border: none; /* Removes the border on IE 10 and older */
 }
 hr {
 	border: 2px solid #000;border-radius: 4px;

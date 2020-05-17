@@ -4,7 +4,7 @@ html {
 	scroll-behavior: smooth;
 	cursor: default;
 	scrollbar-width: thin;
-	scrollbar-color:#ddd #222; 
+	scrollbar-color:#ddd #222;
 }
 /*Compressed line of WebKit Scrollbar so WebKit/Chromium browsers have the same scrollbar*/
 ::-webkit-scrollbar{

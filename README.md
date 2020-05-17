@@ -3,6 +3,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/forkiesassds/twtacct/badge)](https://www.codefactor.io/repository/github/forkiesassds/twtacct) ![Repository Size](https://img.shields.io/github/languages/code-size/forkiesassds/TWTACCT?color=DarkRed&label=Repository%20size)
 
 Welcome to *TWTACCT*, the website anyone can contribute to! See [Contributing](CONTRIBUTING.md) for details on how to add your content.
-Visit the site at [its GitHub pages page](https://forkiesassds.github.io/twtacct/).
+Visit the site at [it's page](https://twtacct.glitch.me/).
 
 ![TWTACCT](media/android-chrome-192x192.png)

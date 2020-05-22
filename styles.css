@@ -33,6 +33,9 @@ html {
 	text-align: center;
 	padding: 5px;
 }
+.nobootstrap {
+	color: inherit;
+}
 body {
 	margin: 1%;
 	font-family: LatoLatinWeb, Lato, sans-serif;
@@ -108,6 +111,9 @@ q {
 	}
 	a:active {
 		color: #36f;
+	}
+	.jumbotron {
+		background-color: #363636;
 	}
 }
 /*Reduced Motion*/

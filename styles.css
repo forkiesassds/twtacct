@@ -1,31 +1,12 @@
 @import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
 html {
-	/*Firefox CSS scrollbar*/
 	scroll-behavior: smooth;
 	cursor: default;
 	scrollbar-width: thin;
 	scrollbar-color:#ddd #222;
 }
 /*Compressed line of WebKit Scrollbar so WebKit/Chromium browsers have the same scrollbar*/
-::-webkit-scrollbar{
-	width:10px;
-	height:10px;
-}
-::-webkit-scrollbar-track{
-	background:#222;
-}
-::-webkit-scrollbar-thumb{
-	background:#ddd;
-	border-radius:4px;
-}
-::-webkit-scrollbar-button{
-	width:0;
-	height:0;
-}
-::selection {
-	color: #eee;
-	background-color: #003399;
-}
+::-webkit-scrollbar{width:10px;height:10px;}::-webkit-scrollbar-track{background:#222;}::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px;}::-webkit-scrollbar-button{width:0;height:0;}::selection {color: #eee;background-color: #003399;}
 
 .center {
 	margin: auto;
@@ -33,12 +14,9 @@ html {
 	text-align: center;
 	padding: 5px;
 }
-.nobootstrap {
-	color: inherit;
-}
 body {
 	margin: 1%;
-	font-family: LatoLatinWeb, Lato, sans-serif;
+	font-family: "LatoLatinWeb", sans-serif;
 	color: #000;
 	background: #f7f7f7;
 }
@@ -53,23 +31,26 @@ h3 {
 	font-size: 1.8em;
 	font-style: normal;
 }
-p,code,ol {
+p,ol,pre {
 	font-size: 1.2em;
 }
-a,a:link,a:visited {
+.code {
+	color: #FF3399;
+}
+.a,.a:link,.a:visited {
 	transition: color .25s, border-bottom-color .25s;
 	color: #1aa3ff;
 	text-decoration: none;
 	border-bottom: solid .1em transparent;
 	font-style: italic;
 }
-a:hover {
+.a:hover {
 	transition: color .25s, border-bottom-color .25s;
 	color: #007acc;
 	text-decoration: none;
 	border-bottom-color: #007acc;
 }
-a:active {
+.a:active {
 	transition: color .25s, border-bottom-color .25s;
 	color: #1a53ff;
 	text-decoration: none;
@@ -79,7 +60,7 @@ img {
 	max-width: 100%;
 	height: auto;
 	padding: 3px;
-	border: none; /* Removes the border on IE 10 and older */
+	border: none; /*Removes the border on IE 10 and older*/
 }
 hr {
 	border: 2px solid #000;
@@ -87,6 +68,28 @@ hr {
 }
 q {
 	font-style: italic;
+}
+button /*Because using Bootstrap is pointless*/ {
+	padding:4px;
+	border:2px solid #343a40;
+	border-radius:4px;
+	font-size:1em;
+	color:#FFF;
+	background-color: #343a40;
+	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
+	transition: background-color .2s, box-shadow .2s, transform .2s;
+}
+button:hover {
+	background-color: #2d3339;
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+	transform: translate(1px,1px);
+	transition: background-color .2s, box-shadow .2s, transform .2s;
+}
+button:active {
+	background-color: #22262b;
+	transform: translate(2px,2px);
+	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.75);
+	transition: background-color .2s, box-shadow .2s, transform .2s;
 }
 
 /*Darkmode*/
@@ -112,19 +115,22 @@ q {
 	a:active {
 		color: #36f;
 	}
-	.jumbotron {
-		background-color: #363636;
+	button {
+	box-shadow: 2px 2px 10px 0 rgba(60,60,60,0.5);
+	}
+	button:hover {
+		box-shadow: 5px 5px 10px 0 rgba(60,60,60,0.5);
+	}
+	button:active {
+		box-shadow: 5px 5px 10px 0 rgba(60,60,60,0.75);
 	}
 }
 /*Reduced Motion*/
 @media only screen and (prefers-reduced-motion: reduce) {
-	a,a:link,a:visited {
+	a,a:link,a:visited,a:hover,a:active {
 		transition: none;
 	}
-	a:hover {
-		transition: none;
-	}
-	a:active {
+	button,button:hover,button:active {
 		transition: none;
 	}
 }

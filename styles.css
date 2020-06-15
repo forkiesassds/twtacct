@@ -31,10 +31,10 @@ h3 {
 	font-size: 1.8em;
 	font-style: normal;
 }
-p,code,ol {
+p,ol,pre {
 	font-size: 1.2em;
 }
-code {
+.code {
 	color: #FF3399;
 }
 .a,.a:link,.a:visited {

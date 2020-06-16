@@ -7,6 +7,7 @@ WOFF2 versions exist*/
         url("CascadiaCode.otf") format("opentype");
     font-style: normal;
     font-weight: normal;
+    font-display: block;
 }
 @font-face {
     font-family: "Cascadia Mono";
@@ -15,4 +16,5 @@ WOFF2 versions exist*/
         url("CascadiaMono.otf") format("opentype");
     font-style: normal;
     font-weight: normal;
+    font-display: block;
 }

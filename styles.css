@@ -44,22 +44,22 @@ pre,code {
 }
 .a,.a:link,.a:visited {
 	transition: color .25s, border-bottom-color .25s;
-	color: #1aa3ff;
+	color: #06c;
 	text-decoration: none;
 	border-bottom: solid .1em transparent;
 	font-style: italic;
 }
 .a:hover {
 	transition: color .25s, border-bottom-color .25s;
-	color: #007acc;
+	color: #0059b3;
 	text-decoration: none;
-	border-bottom-color: #007acc;
+	border-bottom-color: #0059b3;
 }
 .a:active {
 	transition: color .25s, border-bottom-color .25s;
-	color: #1a53ff;
+	color: #036;
 	text-decoration: none;
-	border-bottom-color: #1a53ff;
+	border-bottom-color: #036;
 }
 img {
 	max-width: 100%;
@@ -110,14 +110,16 @@ q {
 		border: 2px solid #efefef;
 		border-radius: 4px;
 	}
-	a,a:link,a:visited {
-		color: #4db8ff;
+	.a,.a:link,.a:visited {
+		color: #66b3ff;
 	}
-	a:hover {
-		color: #09f;
+	.a:hover {
+		color: #4da6ff;
+		border-bottom-color: #4da6ff;
 	}
-	a:active {
-		color: #36f;
+	.a:active {
+		color: #0080ff;
+		border-bottom-color: #0080ff;
 	}
 	.homebutton,.homebutton:link,.homebutton:visited {
 	box-shadow: 2px 2px 10px 0 rgba(60,60,60,0.5);

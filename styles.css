@@ -1,4 +1,5 @@
-@import url("LatoFont/latolatinfonts.css"); /*Imports our font*/
+@import url("media/fonts/lato/latolatinfonts.css"); /*Sans-serif font*/
+@import url("media/fonts/cascadiacode/cascadiacode.css"); /*Mono font*/
 html {
 	scroll-behavior: smooth;
 	cursor: default;
@@ -31,11 +32,15 @@ h3 {
 	font-size: 1.8em;
 	font-style: normal;
 }
-p,ol,pre {
+p,ol,ul,pre {
 	font-size: 1.2em;
 }
+pre,code {
+	font-family: "Cascadia Mono", monospace;
+	font-size: initial;
+}
 .code {
-	color: #FF3399;
+	color: #e60073;
 }
 .a,.a:link,.a:visited {
 	transition: color .25s, border-bottom-color .25s;
@@ -69,27 +74,26 @@ hr {
 q {
 	font-style: italic;
 }
-button /*Because using Bootstrap is pointless*/ {
+.homebutton,.homebutton:link,.homebutton:visited /*Because using Bootstrap is pointless*/ {
 	padding:4px;
 	border:2px solid #343a40;
 	border-radius:4px;
-	font-size:1em;
 	color:#FFF;
 	background-color: #343a40;
+	text-decoration:none;
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
-	transition: background-color .2s, box-shadow .2s, transform .2s;
+	transition: background-color .2s, box-shadow .2s;
 }
-button:hover {
+.homebutton:hover {
 	background-color: #2d3339;
 	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
-	transform: translate(1px,1px);
-	transition: background-color .2s, box-shadow .2s, transform .2s;
+	transition: background-color .2s, box-shadow .2s;
 }
-button:active {
+.homebutton:active {
 	background-color: #22262b;
-	transform: translate(2px,2px);
 	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.75);
-	transition: background-color .2s, box-shadow .2s, transform .2s;
+	transition: background-color .2s, box-shadow .2s;
+	outline: none;
 }
 
 /*Darkmode*/
@@ -115,14 +119,17 @@ button:active {
 	a:active {
 		color: #36f;
 	}
-	button {
+	.homebutton,.homebutton:link,.homebutton:visited {
 	box-shadow: 2px 2px 10px 0 rgba(60,60,60,0.5);
 	}
-	button:hover {
+	.homebutton:hover {
 		box-shadow: 5px 5px 10px 0 rgba(60,60,60,0.5);
 	}
-	button:active {
+	.homebutton:active {
 		box-shadow: 5px 5px 10px 0 rgba(60,60,60,0.75);
+	}
+	.code {
+		color: #ff1a8c;
 	}
 }
 /*Reduced Motion*/

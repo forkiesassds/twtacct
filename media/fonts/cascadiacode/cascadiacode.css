@@ -1,0 +1,18 @@
+/*Cascadia Code stylesheet, by TheThunderGuyS. At the moment only TTF, OTF and
+WOFF2 versions exist*/
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("CascadiaCode.woff2") format("woff2"),
+        url("CascadiaCode.ttf") format("truetype"),
+        url("CascadiaCode.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Cascadia Mono";
+    src: url("CascadiaMono.woff2") format("woff2"),
+        url("CascadiaMono.ttf") format("truetype"),
+        url("CascadiaMono.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}

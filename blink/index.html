@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../media/favicon.ico">
     <link rel="icon" type="image/png" sizes="192x192" href="../media/android-chrome-192x192.png">
@@ -10,13 +10,13 @@
     <link rel="manifest" type="application/manifest+json" href="../site.webmanifest">
     <meta name="title" content="TWTACCT - &lt;blink&gt;">
     <meta name="description" content="The Website That Anyone Can Contribute To. Click here to learn about the horrible &lt;blink&gt; element!">
-	<link rel="stylesheet" href="../styles.css">
+	  <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="blink.css">
-    <script>console.log("%cThis site needs your help!\nContribute at https://github.com/forkiesassds/twtacct","font-size:1.5em;font-family:monospace");</script>
+    <script>console.log("%cThis site needs your help!\nContribute at https://github.com/forkiesassds/twtacct","font-size:1.5em;font-family:'Cascasia Mono', monospace");</script>
     <title>TWTACCT - &lt;blink&gt;</title>
   </head>
   <body>
-    <h1 class="center">The <blink>blink</blink> tag</h1>
+    <h1 class="center">The <span class="blink">blink</span> tag</h1>
     <hr>
     <ol>
       <li><a href="#intro" class="a">Introduction</a></li>
@@ -28,7 +28,7 @@
       <p>The &lt;blink&gt; element is a non-standard HTML element first seen in Netscape Navigator (and later in its decendents like Firefox and Opera). It would be used when the author of the page wanted the surrounding text to "blink" in and out of view. <br><br> This would be implemented using simple inline HTML just like other formatting elements, as so:</p>
       <p><code class="code"> &lt;p&gt;&lt;u&gt;&lt;blink&gt;Hello World!&lt;/blink&gt;&lt;/u&gt;&lt;/p&gt; </code></p>
       <p>This is a standard paragraph &lt;p&gt;, with &lt;u&gt; to underline the text and finally &lt;blink&gt; to blink the text. The resulting text would look like this (will not display if reduced motion settings are enabled in your browser):</p>
-      <p class="blink"><u><blink>Hello World!</blink></u></p>
+      <p class="blink"><u></u><span class="blink">Hello World!</span></u></p>
     </div>
     <div>
       <h3 id="details"><u>Other Details:</u></h3>
@@ -37,8 +37,9 @@
       <p>There is no official syntax since the element was non-standard. There is actually a W3C DTD for the blink element but a comment inside it explains that it's a joke. <br>
         The rate at which is blinks is up to the browser (or the computer's clock speed) and there is no attribute to change the blinking; It just acts as a span-like tag. <br>
         Some browsers would make the text invisible for half a second and visible for half a second while others would be visible for 3 quarters of a second and invisible for 1 quarter of a second.</p>
-      <p>Blinking was also supported outside a tag, by using the <code class="code">style="text-decoration: blink;"</code> attribute on an inline span. This is part of CSS spec but removed with CSS3, additionally CSS 2.1 states <q>conforming user agents may simply not blink the text</q> in order to comply with accessibility standards. <br> Example: <code class="code"> &lt;span style="text-decoration: blink;"&gt;Hello World!&lt;/span&gt;</code></p>
-      <p>The blinking done on this page was done using a CSS polyfill. We can use CSS3's animation rules to accurately recreate &lt;blink&gt;. <br> Below is the needed code to do so:</p>
+      <p>Blinking was also supported outside a tag, by using the <code class="code">style="text-decoration: blink;"</code> attribute on an inline span. This is part of CSS spec but removed with CSS3, additionally CSS 2.1 states <q>conforming user agents may simply not blink the text</q> in order to comply with accessibility standards. <br>Example: <code class="code"> &lt;span style="text-decoration: blink;"&gt;Hello World!&lt;/span&gt;</code></p>
+      <p>The blinking done on this page was done using a CSS polyfill. We can use CSS3's animation rules to accurately recreate &lt;blink&gt;. 
+      <br>Below is the needed code to do so:</p>
       <pre><code class="code">
 /*This sheet gives us a polyfill for &lt;blink&gt;, which never part of HTML spec and last seen in browsers around 2013 with Firefox 22.
 It uses CSS3 animation, working up to Internet Explorer 10.*/
@@ -75,19 +76,21 @@ blink, .blink {
 		animation: none;
 	}
 }
-	  </code></pre>
+</code></pre>
 	</div>
     <div>
       <h3 id="conclusion"><u>Conclusion:</u></h3>
       <p><a href="blink.css" download="blink.css" class="a">Download</a> blink.css to use the Polyfill in your site! <br>
-        Add <code class="code">&lt;link rel="stylesheet" href="https://forkiesassds.github.io/twtacct/blink/blink.css"&gt;</code> to your <code class="code">&lt;head&gt;</code> to use the Polyfill from this server! <br>
-        (for acessibility reasons, I highly advise against using this. I made it
-        just for fun.)</p>
-      <p>Page written by <a href="https://github.com/TheThunderGuyS" title="https://github.com/TheThunderGuyS" target="_blank" rel="noopener noreferrer" class="a">TheThunderGuyS</a> (opens in new tab). <br>
-        All research and facts from <a href="https://en.wikipedia.org/wiki/Blink_element" title="https://en.wikipedia.org/wiki/Blink_element" target="_blank" rel="noopener noreferrer" class="a">this Wikipedia article</a> (opens in new tab).</p>
+        Add <code class="code">&lt;link rel="stylesheet" href="https://forkiesassds.github.io/twtacct/blink/blink.css"&gt;</code> to your 
+        <code class="code">&lt;head&gt;</code> to use the Polyfill from this server! <br>
+        (for acessibility reasons, I highly advise against using this. I made it just for fun.)</p>
+      <p>Page written by <a href="https://github.com/TheThunderGuyS" title="https://github.com/TheThunderGuyS" target="_blank" rel="noopener noreferrer" class="a">
+        TheThunderGuyS</a> (opens in new tab). <br>
+        All research and facts from <a href="https://en.wikipedia.org/wiki/Blink_element" title="https://en.wikipedia.org/wiki/Blink_element" target="_blank"
+        rel="noopener noreferrer" class="a">this Wikipedia article</a> (opens in new tab).</p>
     </div>
     <br>
-	<p class="center"><a href="../index.html"><button>Return home</button></a></p>
+	<p class="center"><a href="../index.html" class="homebutton">Return home</a></p>
     <br>
     <br>
     <br>

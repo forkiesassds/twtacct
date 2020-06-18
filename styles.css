@@ -16,7 +16,7 @@ html {
 	padding: 5px;
 }
 body {
-	margin: 1%;
+	margin: 2px;
 	font-family: "LatoLatinWeb", sans-serif;
 	color: #000;
 	background: #f7f7f7;
@@ -38,6 +38,9 @@ p,ol,ul,pre {
 pre,code {
 	font-family: "Cascadia Mono", monospace;
 	font-size: initial;
+}
+pre {
+	overflow-x: auto;
 }
 .code {
 	color: #e60073;
@@ -64,7 +67,8 @@ pre,code {
 img {
 	max-width: 100%;
 	height: auto;
-	padding: 3px;
+	overflow: hidden;
+	padding:1px;
 	border: none; /*Removes the border on IE 10 and older*/
 }
 hr {

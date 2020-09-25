@@ -1,13 +1,52 @@
 @import url("media/fonts/lato/latolatinfonts.css"); /*Sans-serif font*/
 @import url("media/fonts/cascadiacode/cascadiacode.css"); /*Mono font*/
+
+:root {
+  	color-scheme: light;
+  	--scrollbar-thumb-color: #ddd;
+  	--scrollbar-track-color: #222;
+  	--selection-color: #eee;
+  	--selection-background-color: #003399;
+  	--text-color: #000;
+  	--bg-color: #f7f7f7;
+  	--codeblock-color: #e60073;
+  	--link-color: #06c;
+  	--link-hover-color: #0059b3;
+  	--link-active-color: #036;
+  	--button-color: #343a40;
+  	--button-hover-color: #343a40;
+  	--button-active-color: #22262b;
+}
+
 html {
 	scroll-behavior: smooth;
 	cursor: default;
 	scrollbar-width: thin;
-	scrollbar-color:#ddd #222;
+	scrollbar-color: var(--scrollbar-thumb-color) var(--scrollbar-track-color);
 }
-/*Compressed line of WebKit Scrollbar so WebKit/Chromium browsers have the same scrollbar*/
-::-webkit-scrollbar{width:10px;height:10px;}::-webkit-scrollbar-track{background:#222;}::-webkit-scrollbar-thumb{background:#ddd;border-radius:4px;}::-webkit-scrollbar-button{width:0;height:0;}::selection {color: #eee;background-color: #003399;}
+
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-track-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--scrollbar-thumb-color);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+	width: 0;
+	height: 0;
+}
+::selection {
+	color: var(--selection-color);
+	background-color: var(--selection-background-color);
+}
 
 .center {
 	margin: auto;
@@ -18,8 +57,8 @@ html {
 body {
 	margin: 2px;
 	font-family: "LatoLatinWeb", sans-serif;
-	color: #000;
-	background: #f7f7f7;
+	color: var(--text-color);
+	background: var(--bg-color);
 }
 
 h1 {
@@ -43,26 +82,26 @@ pre {
 	overflow-x: auto;
 }
 .code {
-	color: #e60073;
+	color: var(--codeblock-color);
 }
 .a,.a:link,.a:visited {
 	transition: color .25s, border-bottom-color .25s;
-	color: #06c;
+	color: var(--link-color);
 	text-decoration: none;
 	border-bottom: solid .1em transparent;
 	font-style: italic;
 }
 .a:hover {
 	transition: color .25s, border-bottom-color .25s;
-	color: #0059b3;
+	color: var(--link-hover-color);
 	text-decoration: none;
-	border-bottom-color: #0059b3;
+	border-bottom-color: var(--link-hover-color);
 }
 .a:active {
 	transition: color .25s, border-bottom-color .25s;
-	color: #036;
+	color: var(--link-active-color);
 	text-decoration: none;
-	border-bottom-color: #036;
+	border-bottom-color: var(--link-active-color);
 }
 img {
 	max-width: 100%;
@@ -72,7 +111,7 @@ img {
 	border: none; /*Removes the border on IE 10 and older*/
 }
 hr {
-	border: 2px solid #000;
+	border: 2px solid var(--text-color);
 	border-radius: 4px;
 }
 q {
@@ -80,21 +119,21 @@ q {
 }
 .homebutton,.homebutton:link,.homebutton:visited /*Because using Bootstrap is pointless*/ {
 	padding:4px;
-	border:2px solid #343a40;
+	border:2px solid var(--button-color);
 	border-radius:4px;
 	color:#FFF;
-	background-color: #343a40;
+	background-color: var(--button-color);
 	text-decoration:none;
 	box-shadow: 2px 2px 10px 0 rgba(0,0,0,0.5);
 	transition: background-color .2s, box-shadow .2s;
 }
 .homebutton:hover {
-	background-color: #2d3339;
+	background-color: var(--button-hover-color);
 	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
 	transition: background-color .2s, box-shadow .2s;
 }
 .homebutton:active {
-	background-color: #22262b;
+	background-color: var(--button-active-color);
 	box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.75);
 	transition: background-color .2s, box-shadow .2s;
 	outline: none;
@@ -102,28 +141,16 @@ q {
 
 /*Darkmode*/
 @media only screen and (prefers-color-scheme: dark) {
-	body {
-		background-color: #111;
-		color: #efefef;
-	}
-	::selection {
-		background-color: #09f;
-		color: #333;
-	}
-	hr {
-		border: 2px solid #efefef;
-		border-radius: 4px;
-	}
-	.a,.a:link,.a:visited {
-		color: #66b3ff;
-	}
-	.a:hover {
-		color: #4da6ff;
-		border-bottom-color: #4da6ff;
-	}
-	.a:active {
-		color: #0080ff;
-		border-bottom-color: #0080ff;
+	:root {
+	  	color-scheme: dark;
+	  	--selection-color: #333;
+	  	--selection-background-color: #09f;
+	  	--text-color: #efefef;
+	  	--bg-color: #111;
+	  	--codeblock-color: #ff1a8c;
+	  	--link-color: #66b3ff;
+	  	--link-hover-color: #4da6ff;
+	  	--link-active-color: #0080ff;
 	}
 	.homebutton,.homebutton:link,.homebutton:visited {
 	box-shadow: 2px 2px 10px 0 rgba(60,60,60,0.5);
@@ -133,9 +160,6 @@ q {
 	}
 	.homebutton:active {
 		box-shadow: 5px 5px 10px 0 rgba(60,60,60,0.75);
-	}
-	.code {
-		color: #ff1a8c;
 	}
 }
 /*Reduced Motion*/

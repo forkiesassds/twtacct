@@ -6,3 +6,6 @@ Welcome to *TWTACCT*, the website anyone can contribute to! See [Contributing](C
 Visit the site at [it's Github pages page](https://forkiesassds.github.io/twtacct/).
 
 ![TWTACCT](media/android-chrome-192x192.png)
+
+## Why you should contribute to TWTACCT
+bram

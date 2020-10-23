@@ -9,3 +9,6 @@ Visit the site at [it's Github pages page](https://forkiesassds.github.io/twtacc
 
 ## Why you should contribute to TWTACCT
 bram
+
+## Should you really contribute to TWTACCT?
+Hell yeah.
